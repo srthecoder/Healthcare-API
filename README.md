@@ -24,12 +24,12 @@ Requests → │  (app layer) │  Dependencies: JWT auth, role checks, paginati
                   ▼
            ┌──────────────┐   CRUD + queries (filter, search)
            │  MasoniteORM │ ──────────────────────────────────────────────────────────┐
-           └──────┬───────┘                                                            │
-                  │ SQL                                                                │
-                  ▼                                                                    ▼
-           ┌────────────────┐                                                  ┌────────────────┐
-           │  SQLite (dev)  │  or  PostgreSQL (prod)                           │   Redis/Celery │ (optional: reminders, email jobs)
-           └────────────────┘                                                  └────────────────┘
+           └──────┬───────┘                                                           │
+                  │ SQL                                                               │
+                  ▼                                                                   ▼
+           ┌────────────────┐                                                 ┌────────────────┐
+           │  SQLite (dev)  │  or  PostgreSQL (prod)                          │  Redis/Celery  │ (optional: reminders, email jobs)
+           └────────────────┘                                                 └────────────────┘
 
 Observability: structured logs + health endpoints  |  CI/CD: GitHub Actions → deploy  |  Future: tracing, metrics
 
