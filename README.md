@@ -6,7 +6,7 @@ Creating a fast and efficient API by integrating FastAPI with Masonite ORM for d
 > Web Frameworks, API Development, Backend Development
 
 
-## ⚡ At a Glance
+## ⚡ Stats
 - **p95 latency:** `91 ms`
 - **Stack:** FastAPI · Masonite ORM · SQLite/Postgres · JWT · Uvicorn
 - **Ops:** Docker · GitHub Actions (CI/CD) · Render/Railway deployment
